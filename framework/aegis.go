@@ -19,7 +19,6 @@ import (
 	"encoding/json"
 	"log"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-sdk-go/aws"
@@ -27,6 +26,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	lambdaSDK "github.com/aws/aws-sdk-go/service/lambda"
 	"github.com/aws/aws-xray-sdk-go/xray"
+	"github.com/sirupsen/logrus"
 )
 
 // The types here are aliasing AWS Lambda's events package types. This is so Aegis can add some additional functionality.
